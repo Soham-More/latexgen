@@ -1,0 +1,99 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}      
+\usepackage{tikz}
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage[export]{adjustbox}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+\parindent 0px
+\bibliographystyle{IEEEtran}
+
+\vspace{3cm}
+
+\title{}
+\author{EE23BTECH11217 - Prajwal M$^{*}$
+}
+\maketitle
+\newpage
+\bigskip
+
+% \renewcommand{\thefigure}{\theenumi}
+% \renewcommand{\thetable}{\theenumi}
+
+\chapter{Systems}
+
+\section*{Exercise 9.1}
+\question
+\noindent \textbf{12} \hspace{2pt}For the block diagram shown in the figure, the transfer function $\frac{Y\brak{s}}{R\brak{s}}$ is \\
+\begin{figure}[h]
+    \centering
+    \input{figs/block}
+    \caption{block diagram}
+    \label{fig:9.1.12.1}
+\end{figure}
+
+Solution:\\
+\solution
+\begin{table}[h]
+    \centering
+    \input{tables/table}
+    \caption{Parameters}
+    \label{tab:9.1.12.1}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \input{figs/sfg}
+    \caption{signal flow graph}
+    \label{fig: 9.1.12.2}
+\end{figure}
+
+Using Mason's Gain Formula for \figref{fig: 9.1.12.2},
+\begin{align}
+    \frac{Y\brak{s}}{R\brak{s}} & = \frac{{\sum_{i=1}^{n} P_i\Delta_i}}{{\Delta}}\\
+    & = \frac{P_1\Delta_1 + P_2\Delta_2}{\Delta}\\
+    & = \frac{\frac{2}{s} + 3}{1 - \frac{1}{s}}\\
+    \frac{Y\brak{s}}{R\brak{s}} & = \frac{3s+2}{s-1}
+\end{align}
+
+\end{document}
