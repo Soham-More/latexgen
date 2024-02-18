@@ -54,6 +54,10 @@ Skipped processing file 2023/EE/31/figs/gate_ee_Q31_diagram.tex
 	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EE/54/figs/ckt1.tex
 	Reason: in skiplist styles/skip.txt
+Skipped processing file 2023/EE/wrong assignment 2/tables/table.tex
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
+Skipped processing file 2023/EE/wrong assignment/tables/table.tex
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EE/36/36.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/NM/63/asnmt4.tex
