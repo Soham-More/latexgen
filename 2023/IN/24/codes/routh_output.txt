@@ -1,0 +1,6 @@
+Routh array:
+    1.0000      5.0000      0.0000  
+    2.0000     80.0000      0.0000  
+  -35.0000      0.0000      0.0000  
+   80.0000      0.0000      0.0000  
+Number of zeros in the right half of the s-plane: 2

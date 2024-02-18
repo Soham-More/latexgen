@@ -66,10 +66,12 @@ class LatexFile:
         question_macro = self.config['latex.hints.question']
         solution_macro = self.config['latex.hints.solution']
 
-        begin = latex_code.find(question_macro) + len(question_macro) + 1
+        question_loc = latex_code.find(question_macro)
+
+        begin = question_loc + len(question_macro) + 1
         end = latex_code.find(solution_macro)
 
-        if begin == -1:
+        if question_loc == -1:
             raise Exception(f'Fatal Error: {self.filename} does not contain desciptor macro {question_macro}.')
         if end == -1:
             raise Exception(f'Fatal Error: {self.filename} does not contain desciptor macro {solution_macro}.')

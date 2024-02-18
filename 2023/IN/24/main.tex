@@ -1,0 +1,117 @@
+\iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv} 
+\usepackage{caption}
+\def\inputGnumericTable{}                   
+
+%\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE: IN - 24.2023}
+\author{EE23BTECH11013 - Avyaaz$^{*}$% <-this % stops a space 
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+
+\large\textbf{\textsl{Question:}}
+The number of zeroes of the polynomial $P(s) = s^3+2s^2+5s+80$ in the right side of the plane?\hfill(GATE IN 2023) \\
+\solution
+\fi
+The table below shows the Routh array of the $n^{th}$- order characteristic polynomial : 
+\begin{align}
+    a_0s^n+a_1s^{n-1}......+a_{n-1}s^1+a_ns^0
+\end{align}
+
+\begin{table}[htbp]
+\setlength{\extrarowheight}{8pt}
+\centering
+\input{2023/IN/24/tables/table1}
+\caption{Routh Array}
+\label{tab:routharray.IN.24.2023}
+\end{table}
+ Characteristic Equation:
+\begin{align}
+   s^3+2s^2+5s+80 = 0  
+\end{align}
+
+
+\noindent From \tabref{tab:routharray.IN.24.2023}:
+
+\begin{table}[htbp]
+\setlength{\extrarowheight}{10pt}
+\centering
+\input{2023/IN/24/tables/table2}
+\caption{}
+\label{tab:inputs.IN.24.2023}
+\end{table}
+
+% The number of sign changes of the terms of the first column of the Routh Array corresponds to the number of roots of the characteristic equation in the right half of the s-plane.
+
+\noindent From \tabref{tab:inputs.IN.24.2023}:
+
+Since there are 2 sign changes in the first column of the Routh tabulation. So, the number of zeros in the right
+half of the s-plane will be 2.
+
+% s1 = -4.63925
+% s2 = 1.31963 + 3.93735 i
+% s3 = 1.31963 - 3.93735 i
+% A pole is a value of s (in the Laplace domain) for which the transfer function becomes infinite.
+% A zero is a value of s for which the transfer function becomes zero.
+
+% In the Laplace domain, a transfer function 
+% H(s) is typically represented as a ratio of polynomials in s: H(s)= N(s)/D(s)
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \columnwidth]{2023/IN/24/figs/poles and root_plot.png}
+  \caption{}
+    \label{fig:graph1}
+\end{figure}
+
+% \bibliographystyle{IEEEtran}

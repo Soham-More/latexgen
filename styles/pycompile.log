@@ -1,86 +1,86 @@
 Skipped processing file 2023/IN/37/tables/table.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/IN/60/figs/circuit1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/IN/21/gQ1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/IN/24/main.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/IN/24/tables/table2.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/IN/24/tables/table1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/IN/28/gate1.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/BM/17/1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/BM/16/asnmt3.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/BM/16/tables/table1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/BM/16/codes/fig2/c_fig2.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/BM/16/codes/fig1/c_fig1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/BM/30/codes/fig1/fig1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EC/58/Gate2023.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EC/29/tables/table.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EC/44/figs/ckt1.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/EC/47/gate_ec_47(2).tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EC/50/figs/ckt1.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/EC/43/main.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EC/28/gate.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/CH_45Q/gate_question.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EE/40/GATE_EE_23_40.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/EE/40/tables/table1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EE/14/main.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/EE/14/tables/gate_ee_Q14tab.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EE/14/figs/gate_ee_Q14_diagram.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EE/31/figs/gate_ee_Q31_diagram.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/EE/54/figs/ckt1.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/EE/36/36.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/NM/63/asnmt4.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/NM/33/gate_nm_33.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/PH/37/figs/optD.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/PH/37/figs/optA.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/PH/37/figs/optB.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/PH/37/figs/optC.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/ME/30/me30.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/ME/30/tables/table1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/ME/36/gate1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/figs/block.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/CH/sequences.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/CH/45/gate1.tex
 	Reason: in skiplist styles/skip.txt
 Skipped processing file 2023/CH/45/tables/TABLE1.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
 Skipped processing file 2023/CH/44/g44.tex
-	Reason: Did not match conditions given in key "pdf.validlatex.conditions" in json file pdfc.json
+	Reason: Did not match conditions given in key "pdf.conditions.validlatex" in json file pdfc.json
