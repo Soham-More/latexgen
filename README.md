@@ -54,17 +54,17 @@ This setting lists all the Chapters the latex file will use.
 + file: path to file to make for this chapter
 + base\[optional\]: path to file containing code to use by default
 
-3. Skip Files: latexgen allows skipping latex files whose path is written in the skipfile, as specified in this setting:
+3. Skip Files\[Optional\]: latexgen allows skipping latex files whose path is written in the skipfile, as specified in this setting:
     ```json
     "pdf.skipfile":"styles/skip.txt"
     ```
 
-4. Author List: This setting describes the file to write list of contributors and their solved and unsolved questions:
+4. Author List\[Optional\]: This setting describes the file to write list of contributors and their solved and unsolved questions:
     ```json
     "pdf.authorslist":"styles/authors.txt"
     ```
 
-5. Logging: This settings describes the file to write logging info to. This can be used to get reasons for which a file was skipped
+5. Logging\[Optional\]: This settings describes the file to write logging info to. This can be used to get reasons for which a file was skipped
     ```json
     "pdf.log":"styles/pycompile.log"
     ```
@@ -106,7 +106,7 @@ If any of these the macros from these hints is not in a file, latexgen terminate
     ```
     Causes latexgen to consider "some question ..." as a question
 
-3. **latex.hints.author**: Hints the author of this latex file. Used to generate info about all the contributions.
+3. **latex.hints.author\[Optional\]**: Hints the author of this latex file. Used to generate info about all the contributions.
 
     Example: 
     
