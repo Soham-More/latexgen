@@ -1,5 +1,4 @@
 {
-    "latex.main":"main.tex",
     "latex.root":"2023",
 
     "latex.hints.chapter":"\\chapter",
@@ -53,12 +52,12 @@
             "base":"styles/fourier.tex"
         }
     },
-    "pdf.solved.conditions" : [
+    "pdf.conditions.solved" : [
         "\\begin{align}",
         "\\begin{table}",
         "\\begin{figure}"
     ],
-    "pdf.validlatex.conditions" : [
+    "pdf.conditions.validlatex" : [
         "\\fi",
         "\\iffalse"
     ],

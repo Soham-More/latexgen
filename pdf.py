@@ -42,7 +42,7 @@ def register_latex_file(filename : str, chapters, style : Styles, config : Setti
         return chapters
     file : LatexFile = LatexFile(filename, style, config)
     if not file.isMainFile:
-        config.log(f'Skipped processing file {filename}\n\tReason: Did not match conditions given in key "pdf.validlatex.conditions" in json file {config.file}')
+        config.log(f'Skipped processing file {filename}\n\tReason: Did not match conditions given in key "pdf.conditions.validlatex" in json file {config.file}')
         return chapters
     try:
         chapters[file.chapter].add_file(file)

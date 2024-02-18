@@ -31,13 +31,13 @@ class LatexFile:
     
     def isFileSolved(self, text : str) -> bool:
         offset = text.find(self.config['latex.hints.solution'])
-        for condition in self.config['pdf.solved.conditions']:
+        for condition in self.config['pdf.conditions.solved']:
             if text.find(condition, offset) == -1:
                 return False
         return True
     
     def isValidLatexFile(self, text : str) -> bool:
-        for condition in self.config['pdf.validlatex.conditions']:
+        for condition in self.config['pdf.conditions.validlatex']:
             condition = condition.replace('\\', '\\\\') + '[\\s\\{]'
             
             occurances = re.findall(condition, text)
