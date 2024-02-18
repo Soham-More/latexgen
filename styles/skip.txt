@@ -1,0 +1,12 @@
+2023/BM/16/asnmt3.tex
+2023/EE/36/36.tex
+2023/EC/44/figs/ckt1.tex
+2023/EE/54/figs/ckt1.tex
+2023/EC/44/figs/ckt1.tex
+2023/EE/40/GATE_EE_23_40.tex
+2023/EC/50/figs/ckt1.tex
+2023/IN/28/gate1.tex
+2023/EE/14/main.tex
+2023/CH/45/gate1.tex
+2023/ME/30/me30.tex
+2023/IN/24/main.tex

@@ -1,0 +1,72 @@
+{
+    "latex.main":"main.tex",
+    "latex.root":"2023",
+
+    "latex.hints.chapter":"\\chapter",
+    "latex.hints.question":"\\question",
+    "latex.hints.solution":"\\solution",
+    "latex.hints.author": "\\author",
+
+    "pdf.chapters" : {
+        "Harmonics": {
+            "name":"Harmonics",
+            "file":"2023/harmonics.tex",
+            "base":"styles/harmonics.tex"
+        },
+        "Filters": {
+            "name":"Filters",
+            "file":"2023/filters.tex",
+            "base":"styles/filters.tex"
+        },
+        "Z-transform": {
+            "name":"Z-transform",
+            "file":"2023/ztransform.tex"
+        },
+        "Systems": {
+            "name":"Systems",
+            "file":"2023/systems.tex",
+            "base":"styles/systems.tex"
+        },
+        "Sequences": {
+            "name":"Sequences",
+            "file":"2023/sequences.tex",
+            "base":"styles/sequences.tex"
+        },
+        "Sampling": {
+            "name":"Sampling",
+            "file":"2023/sampling.tex",
+            "base":"styles/sampling.tex"
+        },
+        "Contour Integration": {
+            "name":"Contour Integration",
+            "file":"2023/contour.tex",
+            "base":"styles/contour.tex"
+        },
+        "Laplace Transform": {
+            "name":"Laplace Transform",
+            "file":"2023/laplace.tex",
+            "base":"styles/laplace.tex"
+        },
+        "Fourier transform": {
+            "name":"Fourier transform",
+            "file":"2023/fourier.tex",
+            "base":"styles/fourier.tex"
+        }
+    },
+    "pdf.solved.conditions" : [
+        "\\begin{align}",
+        "\\begin{table}",
+        "\\begin{figure}"
+    ],
+    "pdf.validlatex.conditions" : [
+        "\\fi",
+        "\\iffalse"
+    ],
+    "pdf.styles.macro":"\\pdfcsubs",
+    "pdf.styles.chapter":"styles/chapter.tex",
+    "pdf.styles.question":"styles/question.tex",
+    
+    "pdf.skipfile":"styles/skip.txt",
+    "pdf.authorslist":"styles/authors.txt",
+    "pdf.log":"styles/pycompile.log"
+}
