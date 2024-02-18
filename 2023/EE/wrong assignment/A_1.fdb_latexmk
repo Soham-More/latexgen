@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1708276632 "/home/sanji/Uni/Projects/pdfcompile/2023/EE/wrong assignment/A_1.tex" "A_1.pdf" "A_1" 1708276632
+  "/etc/texmf/web2c/texmf.cnf" 1704303216 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/sanji/Uni/Projects/pdfcompile/2023/EE/wrong assignment/A_1.tex" 1708276632 4016 a6caedc32d13d43ae9ebfdd656c3b13b ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1704303290 2801001 5b0f87676a1c302c427c0e61ce755f99 ""
+  "2023/EE/wrong assignment/tables/Table.tex" 0 -1 0 ""
+  "A_1.aux" 1708276632 32 3985256e7290058c681f74d7a3565a19 ""
+  "A_1.tex" 1708276632 4016 a6caedc32d13d43ae9ebfdd656c3b13b ""
+  (generated)
+  "A_1.log"
+  "A_1.pdf"
