@@ -1,8 +1,6 @@
 # What does this do?
 
-Merge confits are caused due to confilting changes on same line of code, latexgen solves this issue by preventing from everyone editing the same file.
-
-Latexgen auto-generates chapter files(Eg. laplace.tex for laplace transfrom), by walking through all the latex files in all the directories, and adding them to their respective chapter latex files.
+Latexgen auto-generates chapter files(Eg. laplace.tex for laplace transfrom), by walking through all the latex files in all the directories, and adding them to their respective chapter latex files. This prevents most of the merge conflits caused due to everyone adding their solution to the same file.
 
 In addition to this, it also maintains a list of all contributors.
 
