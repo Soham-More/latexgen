@@ -1,0 +1,62 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  18 FEB 2024 23:19
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/vs07/latexgen/2023/AB/1/main.tex
+(/home/vs07/latexgen/2023/AB/1/main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+
+/home/vs07/latexgen/2023/AB/1/main.tex:64: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \begin{table}
+                  [h!]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/home/vs07/latexgen/2023/AB/1/main.tex:64: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \begin{table}[
+                   h!]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: File `2023/AB/1/tables/table.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+/home/vs07/latexgen/2023/AB/1/main.tex:66: Emergency stop.
+<read *> 
+         
+l.66     \input{2023/AB/1/tables/table.tex}
+                                           ^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 480171
+ 560 string characters out of 5894490
+ 284206 words of memory out of 5000000
+ 18071 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 16i,0n,26p,118b,42s stack positions out of 5000i,500n,10000p,200000b,80000s
+/home/vs07/latexgen/2023/AB/1/main.tex:66:  ==> Fatal error occurred, no output PDF file produced!

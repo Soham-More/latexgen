@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1708278591 "/home/vs07/latexgen/2023/AB/1/main.tex" "main.pdf" "main" 1708278591
+  "/etc/texmf/web2c/texmf.cnf" 1704563047 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/vs07/latexgen/2023/AB/1/main.tex" 1708278591 3795 cd0050efdf6ae16190f760bbf36d27ef ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1704640680 1435794 b3c753e0e462810c8c027a091cbbc63d ""
+  "2023/AB/1/tables/table.tex" 0 -1 0 ""
+  "main.aux" 1708278591 32 3985256e7290058c681f74d7a3565a19 ""
+  "main.tex" 1708278591 3795 cd0050efdf6ae16190f760bbf36d27ef ""
+  (generated)
+  "main.log"
+  "main.pdf"
