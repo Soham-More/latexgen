@@ -2,8 +2,6 @@
 
 Latexgen auto-generates chapter files(Eg. laplace.tex for laplace transfrom), by walking through all the latex files in all the directories, and adding them to their respective chapter latex files. This prevents most of the merge conflits caused due to everyone adding their solution to the same file.
 
-In addition to this, it also maintains a list of all contributors.
-
 # Using latexgen
 
 Run 
@@ -16,6 +14,24 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 to generate the pdf.
+
+# Commiting to this repo
+
+For latexgen to compile the latex files, Simply make sure to have these macros:
++ \author{author name/roll no}
++ \chapter{A Chapter name from the chapter list}
++ \question: at beginning of the question
++ \solution: after the end of question and before start of solution
+
+along with \iffalse, \fi.
+
+# Features
+
+Latexgen has the following features:
++ Automatically add all the latex files to a common chapter, without needing everyone chainging the same file.
++ Detect errors like missing \fi, \iffalse
++ Find all solved questions(and submitted questions) by a student
++ All the behaviour is configurable
 
 ## Configuring latexgen
 
@@ -187,6 +203,69 @@ These settings define a list of macros that a file must contain to mark a latex 
 
     If a file is ignored info about it is written to the console and in the logfile.
 
+### Styles
+
+These settings define the overall style a generated latex file must have.
+
+1. **pdf.styles.macro**: This macro tells latexgen to substitute code at a location.
+
+    Example: 
     
+    chapter.tex:
+    ```latex
+    \begin{enumerate}
+
+    \pdfcsubs{chapter}
+
+    \end{enumerate}
+    ```
+
+    pdfc.json:
+    ```json
+    "pdf.styles.macro":"\\pdfcsubs",
+    "pdf.styles.chapter":"styles/chapter.tex"
+    ```
+    this will substitute the chapter code at \pdfcsubs{chapter}.
+
+2. **pdf.styles.chapter**: This macro tells latexgen the path to chapter style file.
+
+    Example: 
+    
+    styles/chapter.tex:
+    ```latex
+    \begin{enumerate}
+
+    \pdfcsubs{chapter}
+
+    \end{enumerate}
+    ```
+
+    pdfc.json:
+    ```json
+    "pdf.styles.macro":"\\pdfcsubs",
+    "pdf.styles.chapter":"styles/chapter.tex"
+    ```
+    this will use the chapter.tex file for getting the chapter style.
+
+3. **pdf.styles.question**: This macro tells latexgen the path to question style file.
+
+    Example: 
+    
+    styles/question.tex:
+    ```latex
+    \item \pdfcsubs{question}
+    \solution
+    \pdfcsubs{solution}
+    \newpage
+    ```
+
+    pdfc.json:
+    ```json
+    "pdf.styles.macro":"\\pdfcsubs",
+    "pdf.styles.question":"styles/chapter.tex"
+    ```
+    this will use the chapter.tex file for getting the chapter style.
+
+    latexgen will substitute \pdfcsubs{question}, with appropriate question and \pdfcsubs{solution} with \input{path_to_latexfile}.
 
 
