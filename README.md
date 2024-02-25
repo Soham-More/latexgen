@@ -2,19 +2,6 @@
 
 Latexgen auto-generates chapter files(Eg. laplace.tex for laplace transfrom), by walking through all the latex files in all the directories, and adding them to their respective chapter latex files. This prevents most of the merge conflits caused due to everyone adding their solution to the same file.
 
-# Using latexgen
-
-Run 
-```
-python3 latexgen.py
-```
-to make auto-generated files, followed by
-```
-pdflatex main.tex
-pdflatex main.tex
-```
-to generate the pdf.
-
 # Commiting to this repo
 
 For latexgen to compile the latex files, Simply make sure to have these macros:
@@ -32,6 +19,20 @@ Latexgen has the following features:
 + Detect errors like missing \fi, \iffalse
 + Find all solved questions(and submitted questions) by a student
 + All the behaviour is configurable
+
+# Running latexgen
+
+Run 
+```bash
+python3 latexgen.py
+```
+to make auto-generated files, followed by
+```bash
+pdflatex main.tex
+pdflatex main.tex
+```
+to generate the pdf.
+
 
 ## Configuring latexgen
 
