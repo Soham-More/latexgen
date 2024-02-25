@@ -34,13 +34,13 @@ pdflatex main.tex
 to generate the pdf.
 
 
-## Configuring latexgen
+# Configuring latexgen
 
 latexgen can be configured by changing the pdfc.json json file.
 
 Here is a documentation of all the settings supported by latexgen as of now, all settings are compulsory unless mentioned.
 
-### General Purpose
+## General Purpose
 
 1. Root Directory:
 ```json
@@ -84,7 +84,7 @@ This setting lists all the Chapters the latex file will use.
     "pdf.log":"styles/pycompile.log"
     ```
 
-### Hints
+## Hints
 
 These settings tell latexgen which latex macros to use to detect/get information from latex file.
 
@@ -135,7 +135,7 @@ If any of these the macros from these hints is not in a file, latexgen terminate
     \author{ee15btech00000}
     ```
 
-### Conditions
+## Conditions
 
 These settings define a list of macros that a file must contain to mark a latex file.
 
@@ -204,7 +204,7 @@ These settings define a list of macros that a file must contain to mark a latex 
 
     If a file is ignored info about it is written to the console and in the logfile.
 
-### Styles
+## Styles
 
 These settings define the overall style a generated latex file must have.
 
