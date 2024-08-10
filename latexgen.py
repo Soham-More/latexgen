@@ -26,7 +26,7 @@ def get_chapter_list(config : Settings, style : Styles):
         if chapter_name in chapters.keys():
             raise Exception(f'Fatal Error: Duplicate Chapter {chapter_name} found in {config.file}') 
 
-        chapters[chapter_name] = LatexChapter(chapter_base, style, chapter_file)
+        chapters[chapter_name] = LatexChapter(config, chapter_base, style, chapter_file)
         chapter_files.append(chapter_file)
     return chapters
 

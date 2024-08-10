@@ -10,6 +10,7 @@ class Styles:
             self.question : str = f.read()
         
         self.stylemacro = config['pdf.styles.macro']
+        self.sectionsinfo = config['pdf.sections']
 
         # if the style macros were not found, print warning
         if self.chapter.find(self.stylemacro + '{chapter}') == -1:
@@ -21,6 +22,9 @@ class Styles:
     
     def applyChapterStyle(self, latex_code : str):
         return self.chapter.replace(self.stylemacro + '{chapter}', latex_code, 1)
-    
+
+    def applySectionStyle(self, section_alias, latex_code : str):
+        return self.chapter.replace(self.stylemacro + '{section_name}', self.sectionsinfo[section_alias]['name'], 1).replace(self.stylemacro + '{section}', latex_code, 1)
+
     def applyQuestionStyle(self, latex_code_question : str, latex_code_soln : str):
         return self.question.replace(self.stylemacro + '{question}', latex_code_question).replace(self.stylemacro + '{solution}', latex_code_soln)

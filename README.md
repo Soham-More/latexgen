@@ -135,6 +135,27 @@ If any of these the macros from these hints is not in a file, latexgen terminate
     \author{ee15btech00000}
     ```
 
+## Toggles
+
+These settings tell latexgen how to parse a (main) latex file.
+These are compulsory, and only take specific values
+
+1. **latex.toggles.format**: Changes the format latexgen assumes a file to 
+have. It can be set to(these values must be quotes):
+
+    - **question-solution\[Default\]:** Seperate the file into a question or 
+    a solution.
+    - **include-all-post-fi:** Include all the file content after \fi 
+    without any regard to question or solution. This will not add this latex 
+    file as a question or solution
+
+2. **latex.toggles.section**: Tells latexgen to group together sections 
+defined in pdf.sections setting.
+
+    - **true:** Use the pdf.sections setting to group together same 
+    sections. If no section is found it raises an exception.
+    - **false:** Do not group based on sections
+
 ## Conditions
 
 These settings define a list of macros that a file must contain to mark a latex file.

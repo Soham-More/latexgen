@@ -38,6 +38,31 @@ class Settings:
         except Exception as exception:
             raise exception
         
+        # check if the setting latex.toggles.sections is defined
+        try:
+            self.useSections : bool = self.config['latex.toggles.sections']
+        except KeyError:
+            print(f'Warning: key latex.toggles.sections not defined, assuming false')
+            self.useSections : bool = False
+        except ValueError as exception:
+            """The latex.toggles.sections can only take true or false values"""
+            raise exception
+        
+        # check if the setting latex.toggles.sections is defined
+        try:
+            self.assumeFileFormat : str = self.config['latex.toggles.format'].lower().strip()
+            if self.assumeFileFormat not in ["question-solution", "include-all-post-fi"]:
+                raise ValueError('latex.toggles.format can only be set to "question-solution" or "include-all-post-fi"')
+        except KeyError:
+            print(f'Warning: key latex.toggles.format not defined, assuming question-solution')
+            self.assumeFileFormat : str = "question-solution"
+        except Exception as exception:
+            raise exception
+
+        if self.useSections:
+            if 'pdf.sections' not in self.config:
+                raise Exception('Toggle pdf.toggle.sections is True, but setting pdf.sections does not exit')
+
     def getKeyIfExists(self, key):
         key_list = key.split('/')
 
@@ -54,7 +79,7 @@ class Settings:
                 return None
 
         return config
-        
+
     def getSetting(self, setting : str):
         setting_list = setting.split('/')
 
@@ -71,12 +96,12 @@ class Settings:
                 raise Exception(f'Fatal Error: Setting {key} not defined in {self.file}.')
 
         return config
-    
+
     def log(self, text: str):
         if self.logfile != None:
             self.logfile.write(text + '\n')
         print(text)
-    
+
     def getAuthor(self, author : str) -> AuthorCell:
         if self.authorfile != None:
             if author in self.authordict.keys():
@@ -84,7 +109,7 @@ class Settings:
             else:
                 self.authordict[author] = AuthorCell(author)
                 return self.authordict[author]
-    
+
     def isSkippedFile(self, filepath : str) -> bool:
         if self.skiplist == None:
             return False
@@ -92,7 +117,7 @@ class Settings:
 
     def __getitem__(self, key):
         return self.getSetting(key)
-    
+
     def __del__(self):
         self.logfile.close()
         

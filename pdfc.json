@@ -5,6 +5,10 @@
     "latex.hints.question":"\\question",
     "latex.hints.solution":"\\solution",
     "latex.hints.author": "\\author",
+    "latex.hints.section": "\\section",
+
+    "latex.toggles.format": "include-all-post-fi",
+    "latex.toggles.sections": true,
 
     "pdf.chapters" : {
         "Harmonics": {
@@ -63,8 +67,28 @@
     ],
     "pdf.styles.macro":"\\pdfcsubs",
     "pdf.styles.chapter":"styles/chapter.tex",
+    "pdf.styles.section":"styles/section.tex",
     "pdf.styles.question":"styles/question.tex",
-    
+
+    "pdf.sections" : {
+        "true-false": {
+            "name":"True or False",
+            "keys":["True False"]
+        },
+        "matrix-match": {
+            "name":"Match The Following",
+            "keys":["Match Following", "MCQ more than"]
+        },
+        "mcq-single": {
+            "name":"MCQs with single correct",
+            "keys":["MCQ single"]
+        },
+        "mcq-multiple": {
+            "name":"MCQs with single correct",
+            "keys":["MCQ One or more than One", "MCQ more than"]
+        }
+    },
+
     "pdf.skipfile":"styles/skip.txt",
     "pdf.authorslist":"styles/authors.txt",
     "pdf.log":"styles/pycompile.log"

@@ -1,0 +1,154 @@
+import re
+
+latex_code = """
+\\iffalse
+\\let\\negmedspace\\undefined
+\\let\\negthickspace\\undefined
+\\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\\usepackage{cite}
+\\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\\usepackage{algorithmic}
+\\usepackage{graphicx}
+\\usepackage{textcomp}
+\\usepackage{xcolor}
+\\usepackage{txfonts}
+\\usepackage{listings}
+\\usepackage{enumitem}
+\\usepackage{mathtools}
+\\usepackage{gensymb}
+\\usepackage{comment}
+\\usepackage[breaklinks=true]{hyperref}
+\\usepackage{tkz-euclide} 
+\\usepackage{listings}
+\\usepackage{gvv}                                        
+%\\def\\inputGnumericTable{}                                 
+\\usepackage[latin1]{inputenc}                                
+\\usepackage{color}                                            
+\\usepackage{array}                                            
+\\usepackage{longtable}                                       
+\\usepackage{calc}                                             
+\\usepackage{multirow}                                         
+\\usepackage{hhline}                                           
+\\usepackage{ifthen}                                           
+\\usepackage{lscape}
+\\usepackage{tabularx}
+\\usepackage{array}
+\\usepackage{float}
+
+\\section{test}
+
+\\newtheorem{theorem}{Theorem}[section]
+\\newtheorem{problem}{Problem}
+\\newtheorem{proposition}{Proposition}[section]
+\\newtheorem{lemma}{Lemma}[section]
+\\newtheorem{corollary}[theorem]{Corollary}
+\\newtheorem{example}{Example}[section]
+\\newtheorem{definition}[problem]{Definition}
+\\newcommand{\\BEQA}{\\begin{eqnarray}}
+\\newcommand{\\EEQA}{\\end{eqnarray}}
+\\newcommand{\\define}{\\stackrel{\\triangle}{=}}
+\\theoremstyle{remark}
+\\newtheorem{rem}{Remark}
+\\begin{document}
+
+\\bibliographystyle{IEEEtran}
+\\vspace{3cm}
+
+\\title{Question 49, ME Gate 2023}
+\\author{EE23BTECH11017 - Eachempati Mihir Divyansh$^{*}$}
+\\chapter{laplace transform}
+\\maketitle
+\\newpage
+\\bigskip
+
+\\renewcommand{\\thefigure}{\\theenumi}
+\\renewcommand{\\thetable}{\\theenumi}
+
+\\question Consider the second-order linear differential equation
+\\[x^2\\frac{d^2y}{dx^2}+x\\frac{dy}{dx}-y=0, \\; x\\geq 1\\]
+with the initial conditions $$y(x=1)=6,\\; \\;\\; \\frac{dy}{dx}\\big{|}_{x=1}=2.$$
+Then the value of $y$ at $x=2$ is \\rule{2cm}{0.1mm}.{\\hfill{GATE ME 2023}}\\\\
+
+\\solution
+\\fi
+
+\\section{test2}
+
+\\begin{table}[h!]
+    \\centering
+    \\include{2023/EE/"wrong assignment 2"/tables/table}
+    \\caption{Given Information} \\label{gateME49.tab:1}
+\\end{table}
+
+Consider the Mellin Transform
+\\begin{align}
+    y(x)\\system{M}\\int_{-\\infty}^{\\infty} x^{s-1}y(x){dx} 
+\\end{align}
+ Let $$Y(s)=\\int_{-\\infty}^{\\infty} x^{s-1}y(x){dx} $$ 
+ Properties of the Mellin transform for a system at initial rest include 
+\\begin{align}
+    y'(x) &\\system{M} -(s-1)Y(s-1)\\\\
+    xy'(x) &\\system{M} -s Y(s)\\\\
+    (x\\frac{d}{dx})^ny&\\system{M} (-s)^nY(s) 
+\\end{align}
+To modify this, evaluating the Mellin Transform specifically,
+\\begin{align}
+    (x\\frac{dy}{dx}) &\\system{M} \\int_{-\\infty}^{\\infty} x^{s-1}(x\\frac{dy}{dx}){dx}, \\;\\;x\\geq1\\\\ 
+    &\\system{M} \\int_{1}^{\\infty} x^{s}(\\frac{dy}{dx}){dx}
+\\end{align} 
+Integrating by parts, 
+\\begin{align}
+    (x\\frac{dy}{dx}) &\\system{M} [x^s\\int \\frac{dy}{dx}dx ]\\big{|}_1 ^{\\infty}-\\int_1^{\\infty} sx^{s-1}y(x)dx\\\\
+    &\\system{M} x^sy(x)\\big{|}_1^{\\infty} -sY(s)\\\\
+    &\\system{M} \\lim_{x\\rightarrow{\\infty}} (x^s y(x))-y(1)-sY(s)
+\\end{align} 
+Let \\begin{align} L=\\lim_{x\\rightarrow{\\infty}} (x^s y(x)) \\label{gateME49.eq: 10}\\end{align}
+Subject to $L=0$, from \\eqref{gateME49.eq:24}, 
+\\begin{align}
+    (x\\frac{dy}{dx}) &\\system{M} -y(1)-sY(s)\\\\
+    (x\\frac{d}{dx})^2 y &\\system {M} s^2Y(s)+sy(1)-y'(1)
+\\end{align}
+The given differential equation can be written as: 
+\\begin{align}
+    x\\frac{d}{dx}(x\\frac{dy}{dx})&=y,\\;\\;x\\geq 1\\\\
+    \\implies (x\\frac{d}{dx})^2y&=y,\\;\\;x\\geq 1
+\\end{align}
+Taking Mellin transform on both sides, and from \\eqref{gateME49.eq:27} 
+\\begin{align}
+    s^2Y(s)+sy(1)-y'(1)=Y(s),\\;\\;s<-1
+\\end{align}
+From \\tabref{gateME49.tab:1}
+\\begin{align}
+    Y(s)&=s^2Y(s)+6s-2\\\\
+    \\implies Y(s)&= \\frac{6s-2}{1-s^2}\\\\&=-\\frac{4}{s+1}-\\frac{2}{s-1}
+\\end{align}
+Property of Laplace Transform 
+\\begin{align}
+     e^{at} \\system{L} \\frac{1}{s-a},\\;\\; \\Re s>a 
+\\end{align}
+Taking inverse Mellin transform,
+ \\begin{align}
+    Y(s) \\system{M^{-0}} y(x) \\equiv Y(s) \\system{L^{-0}} y(e^{-x})\\\\
+    -\\frac{4}{s+1}-\\frac{2}{s-1}\\system{L^{-0}} -4e^{-x}-2e^{x}\\\\
+    \\implies L^{-1} \\cbrak{Y(s)} = -4e^{-x}-2e^{x}
+\\end{align}
+Substituting $x$ by $-\\ln x$
+\\begin{align}
+    y(x)&=-4x-\\frac{2}{x}
+\\end{align}
+To find ROC of s, substituting y(x) in \\eqref{gateME49.eq: 10}
+\\begin{align} 
+    &\\lim_{x\\rightarrow \\infty} x^s \\brak{-4x-\\frac{2}{x}}=0\\\\ \\label{gateME49.eq:24}
+    \\implies& \\lim_{x\\rightarrow \\infty} \\brak{4x^{s+1}+2x^{s-1}}=0\\\\
+    \\implies& \\Re s+1<0,\\;\\Re s-1<0\\\\
+    \\implies& \\Re s<-1\\label{gateME49.eq:27}
+\\end{align}
+
+\\begin{figure}[h]
+    \\centering
+    \\includegraphics[width=\\columnwidth]{2023/EE/"wrong assignment 2"/figs/fig.png}
+    \\caption{Plot of $y(x)$ v/s $x$}
+\\end{figure}
+"""
+
+print(re.findall(r'(\\\s*section\s*\*?\s*\{\s*(.+)\s*\})', latex_code))
